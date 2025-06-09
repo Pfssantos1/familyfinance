@@ -31,3 +31,11 @@ Sistema RESTful desenvolvido com Node.js, Express e PostgreSQL para gerenciar en
 ```bash
 git clone https://github.com/Pfssantos1/familyfinance.git
 cd familyfinance
+```
+### 2. Instale as dependências
+
+```bash
+npm install
+```
+### 3.Configure o Banco de dados
+---
