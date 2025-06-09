@@ -38,4 +38,30 @@ cd familyfinance
 npm install
 ```
 ### 3.Configure o Banco de dados
+
+```bash
+CREATE DATABASE finance_db;
+
+CREATE TABLE transactions (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255),
+  amount NUMERIC,
+  type VARCHAR(20), -- 'income' ou 'expense'
+  date DATE
+);
+```
+### 4. Crie o arquivo .env
+
+```bash
+PGUSER=seu_usuario
+PGPASSWORD=sua_senha
+PGHOST=localhost
+PGDATABASE=finance_db
+PGPORT=5432
+```
+### 5. Inicie o Servidor
+
+```bash
+node main.js
+```
 ---
